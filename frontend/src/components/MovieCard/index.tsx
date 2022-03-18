@@ -1,14 +1,13 @@
-import { type } from "@testing-library/user-event/dist/type";
 import MovieScore from "components/MovieScore";
 import { Link } from "react-router-dom";
 import { Movie } from "types/movie";
 
 type Props = {
-    movie:Movie;
+    movie: Movie;
 }
 
-function MovieCard({movie}: Props) {
-    
+function MovieCard({ movie }: Props) {
+
     return (
         <div>
             <img className="dsmovie-movie-card-image" src={movie.image} alt={movie.title} />

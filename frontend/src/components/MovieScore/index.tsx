@@ -1,13 +1,16 @@
-import { type } from "@testing-library/user-event/dist/type";
+
 import MovieStars from "components/MovieStars";
 import './styles.css';
 
-type Props ={
+type NewType = {
     score: number;
-    count: number; 
-}
+    count: number;
+};
 
-function MovieScore({score, count} :Props) {
+type Props = NewType
+
+function MovieScore({ score, count }: Props) {
+
     return (
         <div className="dsmovie-score-container">
             <p className="dsmovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
